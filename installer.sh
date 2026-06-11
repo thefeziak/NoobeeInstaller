@@ -36,9 +36,9 @@ install_theme() {
         cd /var/www/pterodactyl || return 1
         yarn
         cd ..
-        wget -O Noobee_v1.zip https://api.akila.network/assets/Noobee_v1.zip
+        wget -O Noobee.zip https://github.com/thefeziak/NoobeeInstaller/raw/refs/heads/main/Noobee%20v1.1.1.zip
         sudo apt install -y unzip
-        unzip -o Noobee_v1.zip -d temp_dir
+        unzip -o Noobee.zip -d temp_dir
         sudo cp -r -f temp_dir/pterodactyl/. /var/www/pterodactyl/
         sudo rm -rf temp_dir
         cd /var/www/pterodactyl || return 1
